@@ -1,0 +1,46 @@
+\begin{theindex}
+
+  \item {Apple}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Board}, \hyperpage{10}
+    \subitem {setScore}, \hyperpage{10}
+
+  \indexspace
+
+  \item {checkCollision}
+    \subitem {Snake}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Game}, \hyperpage{10}
+    \subitem {Game}, \hyperpage{11}
+    \subitem {run}, \hyperpage{11}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Snake}, \hyperpage{13}
+  \item {Options}, \hyperpage{11}
+
+  \indexspace
+
+  \item {run}
+    \subitem {Game}, \hyperpage{11}
+
+  \indexspace
+
+  \item {setScore}
+    \subitem {Board}, \hyperpage{10}
+  \item {Snake}, \hyperpage{12}
+    \subitem {checkCollision}, \hyperpage{13}
+    \subitem {operator$<$$<$}, \hyperpage{13}
+    \subitem {update}, \hyperpage{13}
+
+  \indexspace
+
+  \item {update}
+    \subitem {Snake}, \hyperpage{13}
+
+\end{theindex}

@@ -1,0 +1,32 @@
+\hypertarget{options_8h_source}{}\doxysection{options.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ OPT\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ OPT\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOptions}{Options}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classOptions}{Options}}\ \&\mbox{\hyperlink{classOptions_aabec77d9a2e964ede60e96f9b4c25f49}{getInstance}}()}
+\DoxyCodeLine{00011\ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classOptions}{Options}}\ instance;\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00015\ \ \ \ \ \}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classOptions}{Options}}()\ \{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classOptions_a5b1f552656e0984d9d75f34c70afd7ce}{Options}}(\mbox{\hyperlink{classOptions}{Options}}\ \textcolor{keyword}{const}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOptions_a2c8ffaf7d51d599ed698d6c685e06317}{loadFromFile}}(std::string\ filename);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOptions_a3c1de0ec1bbcbb7fcdb5414847852be6}{operator=}}(\mbox{\hyperlink{classOptions}{Options}}\ \textcolor{keyword}{const}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ windowSizeX;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ windowSizeY;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ snakeSpeed;}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\hypertarget{classBoard}{}\doxysection{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+Inheritance diagram for Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d23/classBoard}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}} 
+{\bfseries Board} ()
+\begin{DoxyCompactList}\small\item\em default constructor, that generates gui \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_acedae9b4a3dd11b540253c2a264eb14c}\label{classBoard_acedae9b4a3dd11b540253c2a264eb14c}} 
+void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em draws a gui to the target \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_ade04eb8de16cdaadd8485e6e7de4e33b}\label{classBoard_ade04eb8de16cdaadd8485e6e7de4e33b}} 
+int {\bfseries draw\+Score} ()
+\begin{DoxyCompactList}\small\item\em function that updates a score to print, and then prints it to the gui \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a00d6f7f2a100e5708f0221a0a7d4b804}{set\+Score}} (int value)
+\item 
+\mbox{\Hypertarget{classBoard_a9021b0f98de637a07cc6c1a73279b54b}\label{classBoard_a9021b0f98de637a07cc6c1a73279b54b}} 
+int {\bfseries get\+Score} ()
+\begin{DoxyCompactList}\small\item\em function returning score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBoard_a915a89279d24a3297118f60e64f94070}\label{classBoard_a915a89279d24a3297118f60e64f94070}} 
+void {\bfseries check\+Collision} (\mbox{\hyperlink{classSnake}{Snake}} \&snake, \mbox{\hyperlink{classApple}{Apple}} \&apple, \mbox{\hyperlink{classBoard}{Board}} \&board)
+\begin{DoxyCompactList}\small\item\em function that checks if snakes head touches apple \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_a00d6f7f2a100e5708f0221a0a7d4b804}\label{classBoard_a00d6f7f2a100e5708f0221a0a7d4b804}} 
+\index{Board@{Board}!setScore@{setScore}}
+\index{setScore@{setScore}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Board\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+function that sets a score variable. It takes as an argument a value to replace 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+board.\+h\item 
+board.\+cpp\end{DoxyCompactItemize}

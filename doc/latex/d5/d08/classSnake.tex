@@ -1,0 +1,66 @@
+\hypertarget{classSnake}{}\doxysection{Snake Class Reference}
+\label{classSnake}\index{Snake@{Snake}}
+
+
+{\ttfamily \#include $<$snake.\+h$>$}
+
+Inheritance diagram for Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/d08/classSnake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSnake_a2028a61c1af3ba8a5a0964fb7ad218df}\label{classSnake_a2028a61c1af3ba8a5a0964fb7ad218df}} 
+{\bfseries Snake} (\mbox{\hyperlink{classSnake}{Snake}} \&\&snake)
+\begin{DoxyCompactList}\small\item\em default snake constructor, that generates 3 beggining connected rectangles \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a578f2cdde4a3efd3f98e5988c8ea63ec}{update}} ()
+\item 
+\mbox{\Hypertarget{classSnake_afce2dc2777e07638f69158cdab33e34f}\label{classSnake_afce2dc2777e07638f69158cdab33e34f}} 
+sf\+::\+Vector2f \& {\bfseries get\+Head\+Position} ()
+\begin{DoxyCompactList}\small\item\em function that returns a reference to the head position of a snake \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSnake_a4150253eec1b877daefd02736480afd1}\label{classSnake_a4150253eec1b877daefd02736480afd1}} 
+void {\bfseries draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em draws a snake to the target \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSnake_a915a89279d24a3297118f60e64f94070}{check\+Collision}} (\mbox{\hyperlink{classSnake}{Snake}} \&snake, \mbox{\hyperlink{classApple}{Apple}} \&apple, \mbox{\hyperlink{classBoard}{Board}} \&board)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classSnake_aa5181006d28e22ccd8dd529761fc6ca5}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classSnake}{Snake}} \&snake)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is snake Class It is inherited from sf\+::\+Drawable class, so it can override draw function 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSnake_a578f2cdde4a3efd3f98e5988c8ea63ec}\label{classSnake_a578f2cdde4a3efd3f98e5988c8ea63ec}} 
+\index{Snake@{Snake}!update@{update}}
+\index{update@{update}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Snake\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that updates a position of all snake tiles. It returns a boolean that shows if snake hit itsself or not. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classSnake_a915a89279d24a3297118f60e64f94070}\label{classSnake_a915a89279d24a3297118f60e64f94070}} 
+\index{Snake@{Snake}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{checkCollision}{checkCollision}}
+{\footnotesize\ttfamily void check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSnake}{Snake}} \&}]{snake,  }\item[{\mbox{\hyperlink{classApple}{Apple}} \&}]{apple,  }\item[{\mbox{\hyperlink{classBoard}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+checks if snakes head is in the same place as apple. If yes, then change apple position, and increment score in board \mbox{\Hypertarget{classSnake_aa5181006d28e22ccd8dd529761fc6ca5}\label{classSnake_aa5181006d28e22ccd8dd529761fc6ca5}} 
+\index{Snake@{Snake}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classSnake}{Snake}} \&}]{snake }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+This function prints out a snake elements positions for debugging purposes 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+snake.\+h\item 
+snake.\+cpp\end{DoxyCompactItemize}

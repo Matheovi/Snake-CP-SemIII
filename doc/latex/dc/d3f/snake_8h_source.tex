@@ -1,0 +1,37 @@
+\hypertarget{snake_8h_source}{}\doxysection{snake.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SNAKE\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SNAKE\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/Drawable.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RectangleShape.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderTarget.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SFML/System/Vector2.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <SFML/Window/Keyboard.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classApple}{Apple}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoard}{Board}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSnake}{Snake}}\ :\ \textcolor{keyword}{public}\ sf::Drawable\ \{}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{enum\ class}\ Direction\ \{\ UP,\ RIGHT,\ DOWN,\ LEFT\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ Direction\ currentDirection;}
+\DoxyCodeLine{00032\ \ \ std::vector<sf::Vector2f>\ segments;}
+\DoxyCodeLine{00036\ \ \ sf::RectangleShape\ rect;}
+\DoxyCodeLine{00041\ \ \ sf::Vector2f\ lastSegmentPosition;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{classSnake_a2028a61c1af3ba8a5a0964fb7ad218df}{Snake}}(\mbox{\hyperlink{classSnake}{Snake}}\ \&\&snake)\ \{\ currentDirection\ =\ std::move(snake.currentDirection);\ \}}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{classSnake}{Snake}}();}
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSnake_a578f2cdde4a3efd3f98e5988c8ea63ec}{update}}();}
+\DoxyCodeLine{00051\ \ \ sf::Vector2f\ \&\mbox{\hyperlink{classSnake_afce2dc2777e07638f69158cdab33e34f}{getHeadPosition}}();}
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnake_a4150253eec1b877daefd02736480afd1}{draw}}(sf::RenderTarget\ \&target,\ sf::RenderStates\ states)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnake_a915a89279d24a3297118f60e64f94070}{checkCollision}}(\mbox{\hyperlink{classSnake}{Snake}}\ \&snake,\ \mbox{\hyperlink{classApple}{Apple}}\ \&apple,\ \mbox{\hyperlink{classBoard}{Board}}\ \&board);}
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{classSnake_aa5181006d28e22ccd8dd529761fc6ca5}{operator<<}}(std::ostream\ \&os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classSnake}{Snake}}\ \&snake);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
