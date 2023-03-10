@@ -10,16 +10,16 @@ Game::Game() : window(sf::VideoMode(Options::getInstance().windowSizeX, Options:
 
 void Game::run()
 {
-    sf::Text gameOverText;
+    sf::Text scoreText;
     sf::Font arial;
     arial.loadFromFile("arial.ttf");
-    gameOverText.setString("Score: " + std::to_string(board.getScore()));
-    gameOverText.setFont(arial);
-    gameOverText.setFillColor(sf::Color::Red);
-    gameOverText.setOutlineColor(sf::Color::White);
-    gameOverText.setPosition(sf::Vector2f(Options::getInstance().windowSizeX / 4, Options::getInstance().windowSizeY / 4));
-    gameOverText.setScale(sf::Vector2f(2, 2));
-    window.draw(gameOverText);
+    scoreText.setString("Score: " + std::to_string(board.getScore()));
+    scoreText.setFont(arial);
+    scoreText.setFillColor(sf::Color::Red);
+    scoreText.setOutlineColor(sf::Color::White);
+    scoreText.setPosition(sf::Vector2f(Options::getInstance().windowSizeX / 4, Options::getInstance().windowSizeY / 4));
+    scoreText.setScale(sf::Vector2f(2, 2));
+    window.draw(scoreText);
     bool gameOver = false;
     while (window.isOpen())
     {
@@ -34,7 +34,7 @@ void Game::run()
             gameOver = true;
         }
         checkCollision(snake, apple, board);
-        gameOverText.setString("Game Over\nScore: " + std::to_string(board.getScore()));
+        scoreText.setString("Game Over\nScore: " + std::to_string(board.getScore()));
         window.clear();
         if (!gameOver)
         {
@@ -46,7 +46,7 @@ void Game::run()
         else
         {
 
-            window.draw(gameOverText);
+            window.draw(scoreText);
             window.display();
             std::chrono::milliseconds time(4000);
             std::this_thread::sleep_for(time);
